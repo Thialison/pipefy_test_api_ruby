@@ -1,0 +1,17 @@
+Style/Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/AbcSize:
+  Max: 25
+
+Style/SpecialGlobalVars:
+  Enabled: false
+
+AllCops:
+    NewCops: enable

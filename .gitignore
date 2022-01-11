@@ -1,0 +1,9 @@
+.vscode/
+reports/
+*.png
+*.jpg
+*.html
+.DS_Store
+.irb-history
+.byebug_history
+.idea/
