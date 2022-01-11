@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cargox/awscli-docker:python3
+
+    working_directory: ~/repo
+
+    steps:
+      - setup_remote_docker
+      - checkout
+
+      - run:
+          name: Build Image
+          command: docker build -f ~/repo/Dockerfile -t pipefy_test_api_ruby .
+
+      - run:
+          name: Code sniffer
+          command: docker run cargox-qa-data bundle exec rubocop
+
+workflows:
+  version: 2
+  build_and_push:
+    jobs:
+      - build:
+          context: org-global

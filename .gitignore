@@ -7,3 +7,4 @@ reports/
 .irb-history
 .byebug_history
 .idea/
+.env
