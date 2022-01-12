@@ -1,6 +1,7 @@
 # language: pt
 # encode: UTF-8
 
+@regression
 Funcionalidade: Criar nova Pipe
   Eu como Quality Assurance
   Quero efetuar a criacao de um card a partir de um nova pipe
