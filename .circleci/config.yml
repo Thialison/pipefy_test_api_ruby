@@ -20,7 +20,7 @@ jobs:
 
       - run:
           name: Run Project
-          command: docker run --rm pipefy_test_api_ruby bundle exec cucumber -t @regression
+          command: docker run --rm -e pipefy_api_token=$pipefy_api_token pipefy_test_api_ruby bundle exec cucumber -t @regression
 
 workflows:
   version: 2
