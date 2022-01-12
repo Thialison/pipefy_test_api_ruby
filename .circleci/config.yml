@@ -16,7 +16,11 @@ jobs:
 
       - run:
           name: Code sniffer
-          command: docker run pipefy_test_api_ruby bundle exec rubocop
+          command: docker run --rm pipefy_test_api_ruby bundle exec rubocop
+
+      - run:
+          name: Run Project
+          command: docker run --rm pipefy_test_api_ruby bundle exec rubocop
 
 workflows:
   version: 2
