@@ -48,6 +48,6 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
  ````
   
 **Observações:**
-  * Após realizar um depois o projeto é executado no CI através de um container do docker, afim de verificar a integridade do projeto
+  * Após realizar um depois o projeto é executado no CircleCI através de um container do docker e é realizado a análise estática do mesmo, afim de verificar a integridade do projeto
   
 
