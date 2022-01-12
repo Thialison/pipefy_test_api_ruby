@@ -2,12 +2,12 @@
 # encode: UTF-8
 
 Funcionalidade: Criar nova Pipe
-  Eu como vendedor da CargoX
-  Quero cadastrar meus clientes
-  Para tê-los salvos
+  Eu como Quality Assurance
+  Quero efetuar a criacao de um card a partir de um nova pipe
+  Para assegurar que eles estão sendo criados conforme a especificação
 
 @create_card
-Esquema do Cenario: Criar novo card
+Cenario: Criar novo card
   Dado que tenho uma nova pipe criada com as etapas padrao
   Quando realizo a criacao de um novo card
   Então visualizo os dados card de acordo com as especificacoes
